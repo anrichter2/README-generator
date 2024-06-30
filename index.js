@@ -23,16 +23,15 @@ const questions = [
     },
     {
         type: "input",
-        message: "Do you have any instructions or examples of how the application should be used?", // Screenshots?
+        message: "Do you have any instructions or examples of how the application should be used?",
         name: "usage",
         default: "N/A"
     },
     {
-        type: "list", // How many licenses
+        type: "list",
         message: "What license is associated with this application?",
         name: "license",
-        choices: ["N/A", "MIT"],
-        default: "N/A"
+        choices: ["N/A", "MIT Licence", "Apache Licence 2.0", "Mozilla Public License 2.0"],
     },
     {
         type: "input",
@@ -55,7 +54,7 @@ const questions = [
         type: "input",
         message: "What is your email address?",
         name: "emailAddress"
-    }]; //tablecontents
+    }];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -69,7 +68,8 @@ function init() {
     inquirer
     .prompt(questions)
     .then(response => {
-        writeToFile(response.title, generateMarkdown(response))
+        const fileName = response.title.toLowerCase().split(' ').join('-');
+        writeToFile(fileName, generateMarkdown(response))
     });
 };
 

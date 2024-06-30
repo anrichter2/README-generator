@@ -28,7 +28,7 @@ function renderLicenseSection(license) {
     N/A`
   } else {
     return `## License
-    The license being used is ${license}`
+    The license being used is: ${license}`
   }
 }
 
