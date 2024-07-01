@@ -1,7 +1,8 @@
-# Example README File ![Static Badge](https://img.shields.io/badge/License%3A-MIT Licence-blue)
+# Example README File ![Static Badge](https://img.shields.io/badge/License%3A-MIT_Licence-blue)
 
 ## Description
-It is an example of a generated README file.
+
+An example readme to show that the generator works
 
 ## Table of Contents
 
@@ -14,14 +15,15 @@ It is an example of a generated README file.
 
 ## Installation
 
-Use npm install to get the necessary modules of inquirer installed and that is all.
+Use npm install to get inquirer. That is the only step.
 
 ## Usage
 
-Use it whenever you need to create a readme for a finished project.
+Use to to generate a readme file for any project you need.
 
 ## License
-    The license being used is: MIT Licence
+
+The license being used is: MIT Licence
 
 ## Contribute
 

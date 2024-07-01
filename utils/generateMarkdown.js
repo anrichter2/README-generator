@@ -1,42 +1,39 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-// npm install badge-maker
-// https://img.shields.io/badge/License:-${license}-blue
+// Function that returns a license badge based on which license is passed in
+// If there is no license, returns an empty string
 function renderLicenseBadge(license) {
-  if (license === 'N/A') {
+  if (license === 'None') {
     return ''
   } else {
-    return `![Static Badge](https://img.shields.io/badge/License%3A-${license}-blue)`
+    return `![Static Badge](https://img.shields.io/badge/License%3A-${license.split(' ').join('_')}-blue)`
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Function that returns the license link in the table of contents
+// If there is no license it still returns the license link because I believe that the license link and section should still be generated even if there is no license being used
 function renderLicenseLink(license) {
-  if (license === 'N/A') {
-    return '- [License](#license)'
-  } else {
-    return `- [License](#license)`
-  }
+  return '- [License](#license)'
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// Function that returns the license section of README
+// If there is no license, returns that there is no license
 function renderLicenseSection(license) {
-  if (license === 'N/A') {
+  if (license === 'None') {
     return `## License
-    N/A`
+
+None`
   } else {
     return `## License
-    The license being used is: ${license}`
+
+The license being used is: ${license}`
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title} ${renderLicenseBadge(data.license)}
 
 ## Description
+
 ${data.description}
 
 ## Table of Contents
