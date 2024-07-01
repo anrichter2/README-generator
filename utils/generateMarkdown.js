@@ -65,7 +65,7 @@ ${data.test}
 
 ## Questions
 
-My gitHub account can be found at ${data.gitHubURL}
+My GitHub account can be found at ${data.gitHubURL}
 
 If you have further questions about the application feel free to contact me at ${data.emailAddress}`;
 };
