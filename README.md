@@ -18,6 +18,9 @@ Below are screenshots showing a generated README file.
 
 ![Generated README on GitHub](./images/example-readme-on-github.png)
 
+Link to a walkthrough video showing the application in action:
+[Walkthrough Video](https://drive.google.com/file/d/1WzPjtTJhTedIqamwJIJzYm1Ed1ibEh2j/view?usp=sharing)
+
 ## Credits
 
 N/A
